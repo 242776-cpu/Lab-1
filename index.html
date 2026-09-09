@@ -1,0 +1,355 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Evernest Billing | Medical Billing & RCM Services</title>
+<meta name="description" content="Evernest Billing is a US-based revenue cycle partner delivering accurate billing, faster reimbursements, and airtight compliance." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="header-inner">
+     <a href="index.html" class="brand">
+    <img src="evernest logo.png"
+         alt="Evernest Billing"
+         class="brand-logo">
+</a>
+
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <div class="nav-dropdown" id="servicesDropdown">
+          <button class="nav-dropdown-trigger" id="servicesDropdownTrigger" aria-haspopup="true" aria-expanded="false">
+            RCM Services
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="nav-dropdown-panel">
+            <div class="nav-dropdown-grid" data-services-nav></div>
+          </div>
+        </div>
+        <a href="specialties.html">Specialties</a>
+        <a href="states.html">States</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:+18885550142" class="header-phone">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#11A87E" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          (888) 555-0142
+        </a>
+        <a href="free-audit.html" class="btn btn-primary header-cta">Free Revenue Audit</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <svg id="menuIconOpen" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          <svg id="menuIconClose" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="menu-icon-close"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services/medical-billing.html">RCM Services</a>
+        <a href="specialties.html">Specialties</a>
+        <a href="states.html">States</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a href="tel:+18885550142" class="mobile-menu-phone">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#11A87E" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        (888) 555-0142
+      </a>
+      <a href="free-audit.html" class="btn btn-primary">Free Revenue Audit</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero hero-grid">
+      <div class="container hero-content">
+        <div class="hero-copy reveal">
+          <span class="badge badge-dark">HIPAA Compliant • 98%+ Clean Claims</span>
+          <h1>Maximize Revenue. <span class="text-teal">Reduce Denials.</span> Simplify Medical Billing.</h1>
+          <p>Evernest Billing is a US-based revenue cycle partner delivering accurate billing, faster reimbursements, and airtight compliance — so you can focus on patients, not paperwork.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="free-audit.html">Get Free Revenue Audit <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+            <a class="btn btn-outline" href="tel:+18885550142">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              Schedule a Call
+            </a>
+          </div>
+          <div class="hero-trust"><span>Trusted by 1,200+ providers</span><span>•</span><span>48 states served</span><span>•</span><span>No long-term contracts</span></div>
+        </div>
+        <div class="hero-visual reveal">
+          <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80" alt="Revenue cycle team reviewing billing data" />
+          <div class="hero-card">
+            <strong>Avg. denial rate reduction</strong>
+            <div class="hero-card-value">-71%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="stats-bar">
+      <div class="container stats-grid">
+        <div class="stat-card reveal"><div class="value" data-counter="98.6" data-suffix="%">0%</div><div class="label">Clean Claims Rate</div></div>
+        <div class="stat-card reveal"><div class="value" data-counter="97" data-suffix="%">0%</div><div class="label">Net Collection Rate</div></div>
+        <div class="stat-card reveal"><div class="value" data-counter="48" data-suffix="">0</div><div class="label">States Served</div></div>
+        <div class="stat-card reveal"><div class="value" data-counter="1200" data-suffix="+">0+</div><div class="label">Providers Supported</div></div>
+      </div>
+    </section>
+
+ 
+    <!-- ============ WHY US ============ -->
+    <section class="section">
+      <div class="container why-grid">
+        <div class="reveal">
+          <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=900&q=80" alt="Billing team collaborating on hospital revenue operations" />
+        </div>
+        <div class="reveal">
+          <span class="eyebrow">Why Evernest</span>
+          <h2>A billing partner that earns its keep every cycle</h2>
+          <div class="why-list">
+            <div class="why-item"><span class="why-check">✓</span><div><h4>Audit-first onboarding</h4><p>We show you where revenue leaks before you sign anything.</p></div></div>
+            <div class="why-item"><span class="why-check">✓</span><div><h4>No long-term contracts</h4><p>Month-to-month. We earn your business every cycle.</p></div></div>
+            <div class="why-item"><span class="why-check">✓</span><div><h4>Transparent pricing</h4><p>Simple percentage of collections. No hidden fees, ever.</p></div></div>
+            <div class="why-item"><span class="why-check">✓</span><div><h4>Dedicated account manager</h4><p>One expert who knows your practice by name.</p></div></div>
+            <div class="why-item"><span class="why-check">✓</span><div><h4>Multi-EHR integration</h4><p>Epic, Cerner, Athena, eClinicalWorks, and more.</p></div></div>
+            <div class="why-item"><span class="why-check">✓</span><div><h4>HIPAA compliant</h4><p>SOC 2 aligned workflows and encrypted data at every step.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <!-- ============ Specialties ============ -->
+    <section class="section section-surface">
+      <div class="container">
+        <div class="section-heading reveal text-center">
+          <span class="eyebrow" class="eyebrow section-eyebrow">Specialties</span>
+          <h2 class="text-center">Coding depth for your specialty</h2>
+          <p class="text-center">Specialty-trained coders who know the modifiers, bundling rules, and payer quirks of your field.</p>
+        </div>
+        <div class="service-grid" data-services-grid></div>
+      </div>
+    </section>
+
+
+    <!-- ============ States ============ -->
+    <section class="section section-dark hero-grid">
+      <div class="container">
+        <div class="section-heading reveal text-center">
+          <span class="eyebrow" class="eyebrow section-eyebrow">States</span>
+          <h2 class="text-center">Coding depth for your States</h2>
+          <p class="text-center">Local payer knowledge, national scale. Evernest serves providers in 48 states with consistent process controls and reporting.</p>
+        </div>
+        
+        <div class="specialty-pills" data-states-list></div>
+      </div>
+    </section>
+
+    <!-- ============ SEGMENTS ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal text-center">
+          <span class="eyebrow" class="eyebrow section-eyebrow">Built for your size</span>
+          <h2 class="text-center">From solo practitioner to hospital</h2>
+        </div>
+        <div class="segment-grid">
+          <article class="segment-card reveal"><h3>Solo Provider</h3><p>Lean, percentage-based billing so you keep more of every visit without hiring staff.</p></article>
+          <article class="segment-card reveal"><h3>Small Practice</h3><p>A dedicated team that scales with your patient volume and payer mix.</p></article>
+          <article class="segment-card reveal"><h3>Healthcare Facility</h3><p>Multi-provider, multi-location RCM with consolidated reporting.</p></article>
+          <article class="segment-card reveal"><h3>In-Patient Hospital</h3><p>Complex facility billing, DRG validation, and charge integrity.</p></article>
+          <article class="segment-card reveal"><h3>Home Healthcare</h3><p>OASIS-aware billing and episode management built for home health.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CALCULATOR ============ -->
+    <section class="section section-surface">
+      <div class="container">
+        <div class="section-heading reveal text-center">
+          <span class="eyebrow" class="eyebrow section-eyebrow">Cost comparison</span>
+          <h2 class="text-center">In-house vs. outsourced billing</h2>
+          <p class="text-center">Move the sliders to see what your practice could save.</p>
+        </div>
+        <div class="calculator-card">
+          <div class="calc-controls reveal">
+            <div class="range-row">
+              <div class="range-top"><span>Providers</span><span id="providersValue">5</span></div>
+              <input id="providers" type="range" min="1" max="20" value="5" />
+            </div>
+            <div class="range-row">
+              <div class="range-top"><span>Monthly collections</span><span id="collectionsValue">$150K</span></div>
+              <input id="collections" type="range" min="20000" max="800000" step="10000" value="150000" />
+            </div>
+            <p class="calc-note">Estimates based on typical staffing costs and a 4.5% billing rate. Actual savings determined by your free audit.</p>
+          </div>
+          <div class="calculator-result reveal">
+            <div class="calc-row"><span>In-house billing / mo</span><span class="calc-val" data-output="in-house">$0</span></div>
+            <div class="calc-row outsourced"><span>Evernest outsourced / mo</span><span class="calc-val" data-output="outsourced">$0</span></div>
+            <div class="calc-savings">
+              <p>Estimated monthly savings</p>
+              <div class="amount" data-output="savings">$0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FREE AUDIT CTA ============ -->
+    <section class="cta-band hero-grid">
+      <div class="container cta-inner">
+        <div class="reveal">
+          <h2>Your revenue cycle is leaking. We'll show you where.</h2>
+          <p>Our free, no-obligation audit benchmarks your practice against national data in under a week.</p>
+          <ul class="check-list">
+            <li>Denial Rate Analysis</li>
+            <li>Net Collection Rate vs. Benchmark</li>
+            <li>Days in AR Breakdown</li>
+            <li>Payer Underpayment Screening</li>
+          </ul>
+        </div>
+        <div class="form-shell dark reveal">
+          <h3>Request your free audit</h3>
+          <form data-lead-form>
+            <input type="hidden" name="source" value="home-audit" />
+            <div class="form-grid two-col">
+              <div class="form-group"><label for="name">Full name</label><input id="name" name="name" required  placeholder="Jane Simth"/></div>
+              <div class="form-group"><label for="email">Work email</label><input id="email" name="email" type="email" placeholder="jane@gmail.com" required /></div>
+              <div class="form-group"><label for="phone">Phone</label><input id="phone" placeholder="(555) 000-0000" name="phone" /></div>
+              <div class="form-group"><label for="organization">Practice / Organization</label><input id="organization" placeholder="Riverside Family Care" name="organization" /></div>
+              <div class="form-group"><label for="specialty">Specialty</label>
+                <select id="specialty" name="specialty">
+                  <option value="">Select specialty</option>
+                  <option>Internal Medicine</option><option>Mental / Behavioral Health</option><option>Dermatology</option>
+                  <option>Cardiology</option><option>Physical Therapy</option><option>Orthopedics</option>
+                  <option>Family Practice</option><option>OB-GYN</option><option>Emergency Room</option><option>Urgent Care</option>
+                </select>
+              </div>
+              <div class="form-group"><label for="collectionsRange">Monthly collections</label>
+                <select id="collectionsRange" name="monthly_collections">
+                  <option value="">Select range</option>
+                  <option>Under $50K</option><option>$50K – $150K</option><option>$150K – $500K</option><option>$500K+</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group" class="form-group form-spaced"><label for="message">EHR/PM system</label><textarea id="message" name="message" rows="3" placeholder="Epic, Athena, eClinucalWorks..."></textarea></div>
+            <div class="form-group" class="form-group form-spaced"><label for="message">How can we help?</label><textarea id="message" name="message" rows="3" placeholder="Tell us about your current billing challenges…"></textarea></div>
+            <button class="btn btn-primary btn-block" type="submit">Get My Free Revenue Audit</button>
+            <p class="form-helper">No obligation. HIPAA compliant. We never share your data.</p>
+            <div class="form-status" data-form-status></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal text-center">
+          <span class="eyebrow" class="eyebrow section-eyebrow">Proof</span>
+          <h2 class="text-center">Providers who stopped losing revenue</h2>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial-card reveal">
+            <div class="stars">★★★★★</div>
+            <p>"Our denial rate dropped from 12% to under 3% in one quarter. Evernest found revenue we didn't know we were losing."</p>
+            <div class="testimonial-person">
+              <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=200&q=80" alt="Dr. James Carter" />
+              <div><strong>Dr. James Carter</strong><span>Family Medicine, Austin TX</span></div>
+            </div>
+          </article>
+          <article class="testimonial-card reveal">
+            <div class="stars">★★★★★</div>
+            <p>"The audit was genuinely no-obligation and eye-opening. Onboarding was seamless with zero downtime in our billing."</p>
+            <div class="testimonial-person">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80" alt="Sofia Ramirez" />
+              <div><strong>Sofia Ramirez</strong><span>Practice Manager, Miami FL</span></div>
+            </div>
+          </article>
+          <article class="testimonial-card reveal">
+            <div class="stars">★★★★★</div>
+            <p>"Transparent reporting and a real account manager. Our days in AR fell by 19 and net collections are up 6%."</p>
+            <div class="testimonial-person">
+              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=200&q=80" alt="Robert Klein" />
+              <div><strong>Robert Klein</strong><span>Hospital Administrator, New York NY</span></div>
+            </div>
+          </article>
+        </div>
+        <div class="trust-badges">
+          <span class="badge-static">HIPAA COMPLIANT</span>
+          <span class="badge-static">CMS REGISTERED</span>
+          <span class="badge-static">SOC 2 ALIGNED</span>
+          <span class="badge-static">4.9 ON GOOGLE</span>
+          <span class="badge-static">TRUSTPILOT EXCELLENT</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATES MARQUEE ============ -->
+    <section class="marquee">
+      <div class="marquee-track" id="marqueeTrack"></div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="brand">
+          <span class="brand-mark" class="brand-mark footer-brand-mark">EN</span>
+          <span class="brand-name" class="brand-name footer-brand-name">Evernest Billing</span>
+        </div>
+        <p>Medical billing & revenue cycle management for US healthcare providers. Audit-first, no lock-in.</p>
+        <div class="footer-contact">
+          <a href="tel:+18885550142">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            (888) 555-0142
+          </a>
+          <a href="mailto:hello@evernestbilling.com">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"></path><path d="M22 6c0-1.1-.9-2-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V6zm-2 0-8 5-8-5"></path></svg>
+            hello@evernestbilling.com
+          </a>
+          <p><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Nationwide, United States</p>
+        </div>
+      </div>
+
+      <div class="footer-col"><h4>Services</h4><ul data-footer-services></ul></div>
+      <div class="footer-col"><h4>Specialties</h4><ul data-footer-specialties></ul></div>
+      <div class="footer-col"><h4>States</h4><ul data-footer-states></ul></div>
+
+      <div class="footer-newsletter">
+        <h4>Newsletter</h4>
+        <p>RCM tips, denial guides, and CPT updates.</p>
+        <form class="newsletter-form" data-newsletter-form>
+          <input type="email" required placeholder="Work email" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="footer-bottom">
+        <p id="footerYear">© 2026 Evernest Billing. All rights reserved. HIPAA Compliant.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="privacy.html">Terms</a>
+          <a href="admin.html">Admin</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
